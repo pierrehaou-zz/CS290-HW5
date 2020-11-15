@@ -1,0 +1,39 @@
+<h1>POST Request Received</h1>
+<table>
+ <caption>Values from query string</caption>
+ <thead>
+  <tr>
+   <th> 
+   <th> Parameter
+   <th> 
+   <th> Value
+ <tbody>
+	{{#each dataList}}
+		<tr>
+			<th> 
+			<td> {{this.name}}
+			<td>
+			<td> {{this.value}}
+		<tr>
+	{{/each}}
+</table>
+<br>
+<br>
+<table>
+<caption>Values from body</caption>
+ <thead>
+  <tr>
+   <th> 
+   <th> Parameter
+   <th> 
+   <th> Value
+ <tbody>
+	{{#each bodyList}}
+		<tr>
+			<th> 
+			<td> {{this.name}}
+			<td>
+			<td> {{this.value}}
+		<tr>
+	{{/each}}
+</table>

@@ -1,0 +1,27 @@
+<h1>Get Request Received!</h1>
+<table>
+ <caption>Values from query string</caption>
+ <thead>
+  <tr>
+   <th> 
+   <th> Parameter
+   <th> 
+   <th> Value
+ <tbody>
+	{{#each dataList}}
+		<tr>
+			<th> 
+			<td> {{this.name}}
+			<td>
+			<td> {{this.value}}
+		<tr>
+	{{/each}}
+  
+
+{{!-- </table>
+<ul>
+  {{#each dataList}}
+	
+    <li>{{this.name}}: {{this.value}}
+  {{/each}}
+</ul> --}}
